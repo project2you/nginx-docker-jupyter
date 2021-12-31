@@ -5,7 +5,9 @@ Jupyter Lab behind a NGINX reverse proxy- the Docker way
 sudo apt update && sudo apt -y upgrade
 
 curl -fsSL https://get.docker.com -o get-docker.sh
+
 sudo sh get-docker.sh
+
 docker --version
 
 sudo groupadd docker
