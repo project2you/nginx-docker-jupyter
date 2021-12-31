@@ -20,19 +20,29 @@ newgrp docker
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
 sudo chmod +x /usr/local/bin/docker-compose
+
 docker-compose --version
 
 
 #Option manual
 wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+
 bash Anaconda3-2020.11-Linux-x86_64.sh
+
 source ~/.bashrc
+
 conda info
+
 conda update conda
+
 conda update anaconda
+
 conda create --name myenv python=3.8
+
 conda activate myenv
+
 #conda install -c conda-forge jupyterlab
+
 conda install -c anaconda jupyter 
 
 jupyter notebook --generate-config
