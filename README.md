@@ -49,9 +49,12 @@ c.NotebookApp.ip = '0.0.0.0' # listen on all IPs
     proxy_pass http://<hostname/ip>;
  
 #Don't Delete 
+
 rm /etc/nginx/sites-enabled/default
 
+
 #4 Install OpenSSL
+
 sudo apt-get install -y openssl
 
 # 2.Docker Compose
