@@ -14,6 +14,7 @@ sudo usermod -aG docker $USER
 
 newgrp docker
 
+
 #2.  ติดตั้ง Docker Compose
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
