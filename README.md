@@ -9,7 +9,9 @@ sudo sh get-docker.sh
 docker --version
 
 sudo groupadd docker
+
 sudo usermod -aG docker $USER
+
 newgrp docker
 
 #2.  ติดตั้ง Docker Compose
