@@ -51,6 +51,6 @@ c.NotebookApp.ip = '0.0.0.0' # listen on all IPs
 #4 Install OpenSSL
 sudo apt-get install -y openssl
 
-# Docker Compose
+#2.Docker Compose
 docker compose up -d
 
