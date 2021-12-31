@@ -59,6 +59,7 @@ sudo apt-get install -y openssl
 
 # 2.Docker Compose
 docker compose up -d
+
 docker exec -it jupyterhub /bin/bash
 
 
