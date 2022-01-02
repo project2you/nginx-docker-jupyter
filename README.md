@@ -79,3 +79,9 @@ docker compose up -d
 docker exec -it jupyterhub /bin/bash
 
 
+# Option
+git clone https://github.com/project2you/nginx-docker-jupyter/
+docker build -t project2you/alpine-conda .
+docker run -it -d -p 5000:5000 -p 8888:8888 -v /home/ubuntu/tmp:/root/notebooks project2you/alpine-conda
+
+
