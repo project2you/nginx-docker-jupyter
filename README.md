@@ -47,6 +47,8 @@ conda activate myenv
 
 conda install -c anaconda jupyter 
 
+conda update -c conda-forge notebook
+
 jupyter notebook --generate-config
 
 nano  /home/ubuntu/.jupyter/jupyter_notebook_config.py
