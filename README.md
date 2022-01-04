@@ -38,9 +38,7 @@ source ~/.bashrc
 
 conda info
 
-conda update conda
-
-conda update anaconda
+conda update --all
 
 conda create --name myenv python=3.8
 
