@@ -60,7 +60,9 @@ App.allow_origin='*'
 
 c.NotebookApp.ip = '0.0.0.0' # listen on all IPs 
 
-#3 Edit nginx.config
+
+
+# 3 Edit nginx.config
 sudo apt install curl gnupg2 ca-certificates lsb-release ubuntu-keyring
 
 curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor \
