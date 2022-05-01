@@ -148,6 +148,19 @@ sudo apt install nginx
 sudo apt-get install nginx-module-njs
 
 
+sudo nginx -s reload && sudo nginx -t
+
+
+sudo /etc/nginx/nginx.conf
+
+load_module modules/ngx_http_js_module.so;
+
+load_module modules/ngx_stream_js_module.so;
+
+
+sudo nginx -s reload
+
+
 #The njs dynamic modules for nginx have been installed. To enable these modules, add the following to /etc/nginx/nginx.conf and reload nginx:
 
 load_module modules/ngx_http_js_module.so;
