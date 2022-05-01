@@ -56,7 +56,7 @@ nano  /home/ubuntu/.jupyter/jupyter_notebook_config.py
 
 allow_remote_access='True'
 
-App.allow_origin='*'
+c.NotebookApp.allow_origin = '*'
 
 c.NotebookApp.ip = '0.0.0.0' # listen on all IPs 
 
