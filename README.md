@@ -61,6 +61,11 @@ App.allow_origin='*'
 c.NotebookApp.ip = '0.0.0.0' # listen on all IPs 
 
 
+# cmd
+
+jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root --no-browser
+
+
 
 # 3 Edit nginx.config
 sudo apt install curl gnupg2 ca-certificates lsb-release ubuntu-keyring
