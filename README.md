@@ -17,7 +17,8 @@ sudo usermod -aG docker $USER
 newgrp docker
 
 
-#2.  ติดตั้ง Docker Compose
+
+# 2.ติดตั้ง Docker Compose
 
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
@@ -29,6 +30,11 @@ docker-compose --version
 #Option manual
 
 sudo apt install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+
+
+
+# 3.ติดตั้ง Anaconda
+
 
 wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
 
@@ -43,6 +49,10 @@ conda update --all
 conda create --name myenv python=3.8
 
 conda activate myenv
+
+
+
+# 4.ติดตั้ง Jupyter
 
 #conda install -c conda-forge jupyterlab
 
@@ -67,7 +77,24 @@ jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root --no-browser
 
 
 
-# 3 Edit nginx.config
+# 5.ทดสอบ Jupyter Notebook + Python
+
+git clone  https://github.com/project2you/nginx-docker-jupyter.git
+
+cd nginx-docker-jupyter
+
+python3 app.py
+
+#ระบบจะทำการรัน Jupyter Notebook ขึ้นมา เราสามารถ GET ค่า พารามิตเตอร์ ผ่าน Token ได้โดยเรียกผ่าน API
+
+#curl localhost:5000/api
+
+#จะได้ค่า Token : 53a325b714b8787aaefda5cbd4cb68451bda89905f417b38 ซึ่งสามารถนำไปใช้งานต่อได้
+
+
+
+
+# 6 ติดตั้ง nginx และทำการ config
 sudo apt install curl gnupg2 ca-certificates lsb-release ubuntu-keyring
 
 curl https://nginx.org/keys/nginx_signing.key | gpg --dearmor \
