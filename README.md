@@ -14,7 +14,6 @@ sudo groupadd docker
 
 sudo usermod -aG docker $USER
 
-newgrp docker
 
 
 
@@ -82,6 +81,8 @@ jupyter notebook --ip 0.0.0.0 --port 8888 --allow-root --no-browser
 git clone  https://github.com/project2you/nginx-docker-jupyter.git
 
 cd nginx-docker-jupyter
+
+pip install -r requirements.txt
 
 python3 app.py
 
