@@ -114,19 +114,7 @@ http://nginx.org/packages/ubuntu `lsb_release -cs` nginx" \
     
  
  
- ## Test
- https://jcartw.medium.com/how-to-install-nginx-from-source-with-njs-javascript-module-443e8e3a0cf2
- 
- 
 sudo apt update
-
-sudo apt install nginx
-
-
-
-
-sudo apt update
-
 
 sudo apt install nginx
 
@@ -134,7 +122,8 @@ sudo apt install nginx
 sudo apt-get install nginx-module-njs
 
 
-sudo nginx -s reload && sudo nginx -t
+sudo reboot now
+
 
 
 sudo nano /etc/nginx/nginx.conf
@@ -144,15 +133,13 @@ load_module modules/ngx_http_js_module.so;
 load_module modules/ngx_stream_js_module.so;
 
 
-sudo nginx -s reload
+sudo nginx -s reload && sudo nginx -t
+#Output
+#nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+#nginx: configuration file /etc/nginx/nginx.conf test is successful
 
 
 #The njs dynamic modules for nginx have been installed. To enable these modules, add the following to /etc/nginx/nginx.conf and reload nginx:
-
-load_module modules/ngx_http_js_module.so;
-
-load_module modules/ngx_stream_js_module.so;
-    
 
 
 #file nginx.conf 
