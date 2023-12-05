@@ -35,9 +35,10 @@ sudo apt install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libx
 # 3.ติดตั้ง Anaconda
 
 
-wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+curl -O https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
 
-bash Anaconda3-2020.11-Linux-x86_64.sh
+
+bash Anaconda3-2023.09-0-Linux-x86_64.sh
 
 source ~/.bashrc
 
